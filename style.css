@@ -191,6 +191,7 @@ p{line-height:1.62;color:#c7c7c2}
 }
 .btn.primary{background:var(--pink);border-color:var(--pink)}
 .btn:hover{transform:translate(-4px,-4px);box-shadow:5px 5px 0 var(--paper);color:inherit}
+.home-hero .hero-cta .btn:not(.primary):hover{color:var(--ink)}
 
 .chaos-strip{
   overflow:hidden;
