@@ -19,7 +19,7 @@ window.CAOTIX_CONTENT = {
     email: "caotixband@gmail.com",
     instagram: "https://www.instagram.com/caotix.band/",
     tiktok: "https://www.tiktok.com/@caotix.band",
-    youtube: "",      // leer lassen, solange der Kanal noch nicht verlinkt werden soll
+    youtube: "https://www.youtube.com/@caotixofficial",
     spotify: "",      // leer lassen, solange Spotify noch nicht verlinkt werden soll
     footerText: "CAOTIX – Alternative Metal from Meppen",
     baseUrl: "https://caotix.de",
