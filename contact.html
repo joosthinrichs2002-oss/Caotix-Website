@@ -36,24 +36,44 @@
   </div>
 
   <div class="contact-hub contact-hub-v4">
-    <article class="contact-panel booking-panel">
-      <div class="contact-panel-top">
-        <div>
-          <div class="contact-resource-kicker">BOOKING</div>
-          <h2>BRING THE NOISE.</h2>
+    <section class="contact-form-panel" aria-labelledby="contact-form-title">
+      <div class="contact-form-poster">
+        <div class="contact-resource-kicker">DIRECT CONTACT</div>
+        <h2 id="contact-form-title">SEND THE<br/><span>NOISE.</span></h2>
+        <p>Booking, Presse oder einfach eine Frage? Drei Felder. Kein Umweg.</p>
+        <div class="contact-form-poster-mail">
+          <span>ODER DIREKT PER MAIL</span>
+          <a href="mailto:caotixband@gmail.com">caotixband@gmail.com ↗</a>
         </div>
+        <div class="contact-form-x" aria-hidden="true">X</div>
       </div>
-      <p>Schickt uns direkt Datum, Venue/Location, Art des Events und eine kurze Beschreibung.</p>
-      <a class="contact-action contact-action-dark booking-mail" href="mailto:caotixband@gmail.com?subject=CAOTIX%20Booking-Anfrage">BOOKING ANFRAGE ↗</a>
-      <div class="booking-ghost-word" aria-hidden="true">BOOK</div>
-    </article>
 
-    <aside class="contact-aside contact-aside-inline">
-      <img alt="" decoding="async" loading="lazy" src="assets/xmark.webp"/>
-      <div class="note">LOUD MUSIC.<br/>SMALL INBOX.</div>
-      <p>Antworten gibt's per Mail. Kein Formular. Kein Bullshit.</p>
-      <div class="contact-aside-stamp">MEPPEN · ALTERNATIVE METAL</div>
-    </aside>
+      <form class="caotix-contact-form" id="caotix-contact-form" method="post" action="https://form.taxi/s/qnfxtkdy">
+        <div class="contact-form-kicker">WRITE US.</div>
+        <div class="contact-form-grid">
+          <label class="contact-field">
+            <span>NAME <b aria-hidden="true">*</b></span>
+            <input type="text" name="name" autocomplete="name" required maxlength="120"/>
+          </label>
+          <label class="contact-field">
+            <span>E-MAIL <b aria-hidden="true">*</b></span>
+            <input type="email" name="email" autocomplete="email" required maxlength="254"/>
+          </label>
+          <label class="contact-field contact-field-message">
+            <span>NACHRICHT <b aria-hidden="true">*</b></span>
+            <textarea name="message" required maxlength="5000" rows="7"></textarea>
+          </label>
+        </div>
+        <div class="contact-honeypot" aria-hidden="true">
+          <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"/></label>
+        </div>
+        <div class="contact-form-bottom">
+          <p class="contact-form-privacy">Deine Angaben werden zur Bearbeitung deiner Anfrage verarbeitet und über Form.taxi an uns übermittelt. Details zu Rechtsgrundlage, Speicherdauer und technischem Versand findest du in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+          <button class="contact-form-submit" type="submit">SEND MESSAGE ↗</button>
+        </div>
+        <p class="contact-form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
 
     <article class="contact-panel production-block production-panel">
       <div class="contact-panel-top">
@@ -130,4 +150,18 @@
 <span aria-label="Spotify coming soon" class="footer-icon" title="Spotify coming soon"><svg viewbox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"></path></svg></span>
 <a aria-label="E-Mail" class="footer-icon" href="mailto:caotixband@gmail.com"><svg viewbox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.5l8 5 8-5V6H4zm16 12V8.85l-8 5-8-5V18h16z"></path></svg></a>
 <a class="footer-contact" href="contact.html">Contact</a>
-</div></div></footer><script src="content.js"></script><script src="content-render.js"></script><script src="shows.js"></script><script src="script.js"></script></body></html>
+</div></div></footer><script src="content.js"></script><script>
+(() => {
+  const form = document.getElementById('caotix-contact-form');
+  if (!form) return;
+  const status = document.getElementById('contact-form-status');
+  const endpoint = window.CAOTIX_CONTENT?.site?.contactFormEndpoint?.trim() || '';
+  if (endpoint) form.action = endpoint;
+  form.addEventListener('submit', (event) => {
+    if (endpoint) return;
+    event.preventDefault();
+    status.textContent = 'Das Kontaktformular ist momentan nicht verfügbar. Schreib uns bitte direkt an caotixband@gmail.com.';
+    status.classList.add('is-visible');
+  });
+})();
+</script><script src="content-render.js"></script><script src="shows.js"></script><script src="script.js"></script></body></html>

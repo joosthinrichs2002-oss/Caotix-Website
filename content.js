@@ -21,6 +21,7 @@ window.CAOTIX_CONTENT = {
     tiktok: "https://www.tiktok.com/@caotix.band",
     youtube: "https://www.youtube.com/@caotixofficial",
     spotify: "",      // leer lassen, solange Spotify noch nicht verlinkt werden soll
+    contactFormEndpoint: "https://form.taxi/s/qnfxtkdy", // Form.taxi Sendeadresse für das Kontaktformular
     footerText: "CAOTIX – Alternative Metal from Meppen",
     baseUrl: "https://caotix.de",
     socialImage: "assets/caotix-social.jpg",
