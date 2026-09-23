@@ -2244,3 +2244,39 @@ body.motion-ready .page-hero .page-tagline{animation:riseIn .45s .23s both var(-
   .contact-form-bottom{grid-template-columns:1fr;gap:16px}
   .contact-form-submit{width:100%}
 }
+
+/* ===== CAOTIX form success page ===== */
+.thanks-page{min-height:100vh;background:#050505}
+.thanks-main{min-height:calc(100vh - 170px);display:grid;place-items:center;padding:86px 22px 72px;background:
+  radial-gradient(circle at 16% 26%,rgba(255,10,138,.08),transparent 32%),
+  linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),
+  #050505;background-size:auto,100% 6px,auto}
+.thanks-card{position:relative;width:min(920px,100%);min-height:430px;display:grid;grid-template-columns:150px minmax(0,1fr);align-items:center;gap:38px;padding:50px 56px 46px;background:#0b0b0d;color:var(--white);border:1px solid rgba(255,255,255,.32);box-shadow:9px 9px 0 rgba(255,10,138,.78);overflow:hidden;transform:rotate(-.05deg)}
+.thanks-card::before{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.07);pointer-events:none}
+.thanks-card::after{content:"";position:absolute;right:0;top:0;width:8px;height:100%;background:var(--pink)}
+.thanks-mark{position:relative;z-index:2;width:122px;height:122px;display:grid;place-items:center;border:2px solid rgba(255,255,255,.7);background:#080808;box-shadow:6px 6px 0 var(--pink);transform:rotate(-1.5deg)}
+.thanks-mark span{font-family:Arial,Helvetica,sans-serif;font-size:4.8rem;font-weight:500;line-height:1;color:var(--pink);transform:rotate(4deg)}
+.thanks-copy{position:relative;z-index:2;max-width:620px}
+.thanks-kicker{display:inline-block;margin-bottom:16px;padding:5px 9px;background:var(--pink);color:#fff;font-size:.64rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;transform:rotate(-.5deg)}
+.thanks-copy h1{margin:0;font-family:"Arial Narrow",Arial,Helvetica,sans-serif;font-size:clamp(2.9rem,5.7vw,5.4rem);font-weight:700;line-height:.9;letter-spacing:-.045em;text-transform:uppercase;color:#f3f3ef}
+.thanks-copy h1 span{color:var(--pink);font-weight:700}
+.thanks-copy p{max-width:570px;margin:24px 0 0;color:#b7b7b2;font-size:.98rem;line-height:1.65}
+.thanks-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.thanks-actions .btn{border-color:#e7e7e2;color:#f7f7f2}
+.thanks-actions .btn:not(.primary):hover{color:var(--ink)}
+.thanks-stamp{position:absolute;z-index:3;right:30px;top:24px;padding:6px 9px;border:2px solid var(--pink);color:var(--pink);font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:.78rem;letter-spacing:.15em;transform:rotate(5deg);opacity:.9}
+.thanks-x{position:absolute;right:-44px;bottom:-98px;font-family:"Arial Narrow",Arial,Helvetica,sans-serif;font-weight:700;font-size:17rem;line-height:1;color:transparent;-webkit-text-stroke:2px rgba(255,10,138,.08);transform:rotate(-13deg);pointer-events:none}
+@media(max-width:760px){
+  .thanks-main{padding:70px 18px 58px}
+  .thanks-card{grid-template-columns:1fr;gap:26px;padding:40px 28px 36px;min-height:0;box-shadow:7px 7px 0 rgba(255,10,138,.78)}
+  .thanks-mark{width:96px;height:96px}
+  .thanks-mark span{font-size:3.8rem}
+  .thanks-copy h1{font-size:clamp(2.7rem,12vw,4.8rem)}
+  .thanks-stamp{right:24px;top:22px;font-size:.86rem}
+}
+@media(max-width:480px){
+  .thanks-card{padding:34px 20px 32px}
+  .thanks-actions{flex-direction:column}
+  .thanks-actions .btn{width:100%;text-align:center}
+  .thanks-stamp{display:none}
+}
