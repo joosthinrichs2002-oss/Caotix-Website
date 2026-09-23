@@ -1196,29 +1196,38 @@ body.motion-ready .page-hero .page-tagline{animation:riseIn .45s .23s both var(-
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-height:42px;
+  min-height:46px;
   margin-top:6px;
-  padding:0 16px;
-  color:var(--pink);
-  font-size:.74rem;
+  padding:0 20px;
+  color:#fff;
+  font-size:.69rem;
   font-weight:900;
   letter-spacing:.12em;
   text-transform:uppercase;
   text-decoration:none;
-  border:1px solid rgba(255,10,138,.42);
-  border-radius:999px;
-  background:rgba(255,10,138,.08);
-  box-shadow:0 0 0 1px rgba(255,10,138,.06);
-  transition:background var(--motion-fast),color var(--motion-fast),border-color var(--motion-fast),transform var(--motion-fast),box-shadow var(--motion-fast);
+  border:2px solid var(--pink);
+  border-radius:0;
+  background:var(--pink);
+  position:relative;
+  overflow:hidden;
+  transition:.18s;
+}
+.show-ticket::after{
+  content:"";
+  position:absolute;
+  inset:-4px;
+  background:#0b0b0b;
+  transform:translateX(-115%) rotate(2deg);
+  transition:transform .22s var(--ease-slide);
+  z-index:-1;
 }
 .show-ticket:hover{
   text-decoration:none;
-  background:var(--pink);
-  color:#050505;
-  border-color:var(--pink);
-  transform:translateY(-1px);
-  box-shadow:0 10px 20px rgba(0,0,0,.18);
+  color:#fff;
+  transform:translate(-4px,-4px);
+  box-shadow:5px 5px 0 var(--paper);
 }
+.show-ticket:hover::after{transform:translateX(0) rotate(0)}
 .show-empty{
   padding:34px 4px 28px;
   border-bottom:3px solid var(--ink);
