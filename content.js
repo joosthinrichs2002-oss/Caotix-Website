@@ -352,7 +352,7 @@ window.CAOTIX_CONTENT = {
     mailSubject: "CAOTIX Anfrage",
     mailBody: "Hallo CAOTIX,\n\nich habe folgende Anfrage:\n\n\n\nMit freundlichen Grüßen\n",
     asideNote: "LOUD MUSIC.\nSMALL INBOX.",
-    asideText: "Antworten gibt's per Mail. Kein Formular. Kein Bullshit."
+    asideText: "Antworten gibt's per Mail oder direkt über das Formular. Kein Bullshit."
   },
 
   aux: {
