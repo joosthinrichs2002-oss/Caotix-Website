@@ -1080,7 +1080,13 @@ body.motion-ready .page-hero .page-tagline{animation:riseIn .45s .23s both var(-
 @keyframes asideX{from{transform:rotate(-4deg) translate(0,0)}to{transform:rotate(3deg) translate(-10px,-8px)}}
 
 /* legal pages stay calmer on purpose */
-.legal-sheet.motion-reveal,.legal-aside.motion-reveal{--motion-y:14px}
+/* Legal pages: content must be immediately visible on load, especially on mobile. */
+.legal-sheet.motion-reveal,.legal-aside.motion-reveal{
+  opacity:1 !important;
+  transform:none !important;
+  transition:transform .24s var(--ease-hit),box-shadow .24s var(--ease-hit),border-color .18s ease;
+}
+
 .legal-sheet:hover{transform:translateY(-2px);box-shadow:8px 9px 0 var(--pink)}
 .legal-aside:hover{transform:rotate(.2deg) translateY(-2px)}
 

@@ -199,7 +199,7 @@ if (releaseModal) {
   const groups = [
     ['.section > .wrap > .black-tape, .section > .wrap > h2, .merch-headline, .merch-sub', 0],
     ['.scrap, .member, .story-scrap, .merch-card, .show', 70],
-    ['.band-photo, .bio-sheet, .music-art, .music-sheet, .contact-sheet, .contact-aside, .live-board, .legal-sheet, .legal-aside, .booking-note', 95],
+    ['.band-photo, .bio-sheet, .music-art, .music-sheet, .contact-sheet, .contact-aside, .live-board, .booking-note', 95],
     ['.next-show-inner > *', 65]
   ];
 
