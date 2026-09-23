@@ -1,4 +1,4 @@
-/* CAOTIX content renderer — normalerweise nicht bearbeiten. */
+/* CAOTIX content renderer – normalerweise nicht bearbeiten. */
 (() => {
   const C = window.CAOTIX_CONTENT || {};
   const currentYear = new Date().getFullYear();

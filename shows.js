@@ -1,5 +1,5 @@
 /*
- * CAOTIX SHOW-LOGIK — normalerweise nicht bearbeiten.
+ * CAOTIX SHOW-LOGIK – normalerweise nicht bearbeiten.
  * Termine werden in content.js unter "shows" gepflegt.
  */
 

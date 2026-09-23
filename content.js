@@ -1,6 +1,6 @@
 /*
  * ================================================================
- * CAOTIX WEBSITE — INHALTE
+ * CAOTIX WEBSITE – INHALTE
  * ================================================================
  * DIESE DATEI ist die wichtigste Datei für die laufende Pflege.
  * Hier können Texte, Termine, Mitglieder, Releases, Merch, Kontakt-
@@ -21,7 +21,7 @@ window.CAOTIX_CONTENT = {
     tiktok: "https://www.tiktok.com/@caotix.band",
     youtube: "",      // leer lassen, solange der Kanal noch nicht verlinkt werden soll
     spotify: "",      // leer lassen, solange Spotify noch nicht verlinkt werden soll
-    footerText: "CAOTIX — Alternative Metal from Meppen",
+    footerText: "CAOTIX – Alternative Metal from Meppen",
     baseUrl: "https://caotix.de",
     socialImage: "assets/caotix-social.jpg",
     socialImageAlt: "CAOTIX – Alternative Metal aus Meppen"
@@ -172,7 +172,7 @@ window.CAOTIX_CONTENT = {
         ["Job", "Vocals / hooks / getting things done"],
         ["Stage rule", "If you mean it, people hear it"],
         ["Influences", "Spiritbox / Jinjer / Bring Me The Horizon / Architects / Paramore"],
-        ["Where it started", "Started singing, stayed for the noise — and somewhere along the way also became the person who actually makes sure things happen."]
+        ["Where it started", "Started singing, stayed for the noise – and somewhere along the way also became the person who actually makes sure things happen."]
       ]
     },
     {
@@ -200,7 +200,7 @@ window.CAOTIX_CONTENT = {
     },
     {
       id: "andreas", name: "Andreas / Andi", role: "Bass", image: "assets/andreas.webp", placeholder: false,
-      bio: "Der entspannte Gegenpol im Chaos — zumindest so lange, bis es um Technik geht. Andi kümmert sich um das Low End und kann gleichzeitig erschreckend viel Zeit damit verbringen, sein Pedalboard umzubauen, neue Effekte auszuprobieren und noch irgendeine Lösung zu finden, die technisch bestimmt absolut notwendig war.",
+      bio: "Der entspannte Gegenpol im Chaos – zumindest so lange, bis es um Technik geht. Andi kümmert sich um das Low End und kann gleichzeitig erschreckend viel Zeit damit verbringen, sein Pedalboard umzubauen, neue Effekte auszuprobieren und noch irgendeine Lösung zu finden, die technisch bestimmt absolut notwendig war.",
       facts: [
         ["Weapon of choice", "Bass / pedalboard / too many options"],
         ["Job", "Bass / low end / technical overthinking"],
@@ -219,7 +219,7 @@ window.CAOTIX_CONTENT = {
         ["Drum rule", "Stay calm. Hit hard."],
         ["Special skill", "Quietly being good at everything"],
         ["Influences", "Gojira / Lorna Shore / Architects / Slipknot / Knocked Loose"],
-        ["Where it started", "Music first, instruments second. Eventually ended up behind the kit — which turned out to be a pretty good place to keep everyone else under control."]
+        ["Where it started", "Music first, instruments second. Eventually ended up behind the kit – which turned out to be a pretty good place to keep everyone else under control."]
       ]
     }
   ],

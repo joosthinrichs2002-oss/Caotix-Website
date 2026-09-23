@@ -1134,7 +1134,7 @@
 })();
 
 (()=>{const mark=document.querySelector('.copyright-mark');if(!mark)return;const e=document.createElement('button');e.className='u7k';e.type='button';e.tabIndex=-1;e.setAttribute('aria-label','');mark.appendChild(e);e.addEventListener('click',()=>{location.href=[113,52,109,55,118,47,105,110,100,101,120,46,104,116,109,108].map(n=>String.fromCharCode(n)).join('')})})();
-/* Merch Easter egg: Decay or Grow — staged fracture build-up from hairline cracks to full rupture. */
+/* Merch Easter egg: Decay or Grow – staged fracture build-up from hairline cracks to full rupture. */
 (() => {
   const trigger = document.querySelector('[data-decay-grow-trigger]');
   if (!trigger) return;
