@@ -48,7 +48,7 @@ window.CAOTIX_CONTENT = {
       },
       music: {
         path: "/music.html",
-        title: "Musik – CAOTIX | Songs & Debüt-EP",
+        title: "Musik – CAOTIX | Songs & EP´s",
         description: "Musik von CAOTIX aus Meppen: Songs, Releases, Tracklists und Streaming-Links auf der offiziellen Website."
       },
       members: {
