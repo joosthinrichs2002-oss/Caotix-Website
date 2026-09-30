@@ -277,8 +277,6 @@ window.CAOTIX_CONTENT = {
       "Sobald die ersten Songs draußen sind, landen hier Cover, Tracklist, Spotify, YouTube und weitere Streaming-Links."
     ],
     releases: [
-      {
-      }
     ]
   },
 
