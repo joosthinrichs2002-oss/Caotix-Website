@@ -278,15 +278,6 @@ window.CAOTIX_CONTENT = {
     ],
     releases: [
       {
-        type: "SINGLE",
-        title: "From Above",
-        status: "upcoming",
-        date: "",
-        dateLabel: "COMING SOON",
-        cover: "assets/from-above.webp",
-        description: "Die erste Single von CAOTIX. Bald auf allen gängigen Streaming-Plattformen.",
-        tracks: ["From Above"],
-        links: {}
       }
     ]
   },
