@@ -262,7 +262,7 @@ window.CAOTIX_CONTENT = {
     { date: "2026-09-18", time: "20:15", title: "Altstadtfest Lingen", venue: "EMILI Bühne", city: "Lingen", ticket: "", info: "", admission: "FREE ENTRY" },
     { date: "2026-09-19", time: "19:00", title: "Rock am Pferdemarkt", venue: "Alter Pferdemarkt", city: "Lingen", ticket: "", info: "", admission: "FREE ENTRY" },
     { date: "2026-11-06", title: "Wäscherock Mini Festival 2026", venue: "Zur Wäsche", city: "Meppen", ticket: "", info: "", admission: "FREE ENTRY" },
-    { date: "2026-11-14", time: "15:00", title: "Beard Rock Festival", venue: "JAM – Jugend- und Kulturzentrum Meppen", city: "Meppen", ticket: "https://www.eventim.de/eventseries/beard-rock-festival-vol-iii-the-barber-strikes-back-4091827/", info: "" },
+    { date: "2026-11-14", time: "15:00", title: "Beard Rock Festival", venue: "JAM – Jugend- und Kulturzentrum Meppen", city: "Meppen", ticket: "https://www.eventim-light.com/de/a/6971f42d10c87e2a2fc54856/e/6971f5d410c87e2a2fc54a94?lang=de", info: "" },
     { date: "2027-03-06", time: "17:30", title: "Metalblast VII", venue: "Alter Schlachthof", city: "Lingen", ticket: "https://www.eventim-light.com/de/a/653f5c24e818603543253edf/e/6ac0ec17cf7a81d696dfa750", info: "" }
   ],
 
